@@ -51,42 +51,46 @@ body {
 }
 
 
-/* CATEGORY BAR (3D BUTTONS) */
+/* CATEGORY BAR (button version) */
 .category-bar {
   display: flex;
   overflow-x: auto;
   padding: 10px 20px;
   gap: 12px;
   background: #f8fafc;
+  border: none !important;
+  box-shadow: none !important;
+  scrollbar-width: none !important;
 }
 
-.category-bar a {
-  padding: 6px 14px;
-  background: white;
-  border-radius: 8px;
+.category-bar::-webkit-scrollbar {
+  height: 0;
+}
+
+/* Category Buttons */
+.category-bar button {
+  padding: 8px 16px;
+  background: linear-gradient(to bottom, #ffffff, #eef0f6);
+  border-radius: 10px;
   border: 1px solid #d5d9e1;
-  color: #111827;
+  font-size: 0.95rem;
   font-weight: 500;
+  color: #111827;
   white-space: nowrap;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   transition: 0.2s;
 }
 
-.category-bar a:hover {
-  background: #eef2ff;
+.category-bar button:hover {
+  background: #e6ebff;
   color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.category-bar {
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-.category-bar a {
-  border-bottom: none !important;
-  outline: none !important;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.04) !important;
+.category-bar button:active {
+  transform: scale(0.97);
 }
 
 
