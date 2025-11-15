@@ -2,83 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Clothing Store</title>
+  <title>MyCloth – Online Fashion Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Link to CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  <!-- Header / Navbar -->
-  <header class="site-header">
+
+<!-- MAIN HEADER -->
+<header class="main-header">
+  <div class="header-inner">
     <div class="logo">MyCloth</div>
-    <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#">Men</a>
-      <a href="#">Women</a>
-      <a href="#">Kids</a>
-      <a href="#">Contact</a>
+
+    <nav class="top-nav">
+      <a href="#"><span>🏠</span> Home</a>
+      <a href="products.html"><span>🛍️</span> Products</a>
+      <a href="customize.html"><span>🎨</span> Customize</a>
+      <a href="design.html"><span>📐</span> Design</a>
+      <a href="about.html"><span>ℹ️</span> About</a>
+      <a href="contact.html"><span>📞</span> Contact</a>
+      <a href="checkout.html"><span>🛒</span> Checkout</a>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1 id="home_title">New Season, New Style</h1>
-      <p id="home_subtitle">Trendy outfits at affordable prices.</p>
-      <button class="hero-btn">Shop Now</button>
+<!-- SECONDARY CATEGORY NAVBAR -->
+<div class="category-bar">
+  <a href="#">T-Shirts</a>
+  <a href="#">Shirts</a>
+  <a href="#">Trousers</a>
+  <a href="#">Coats</a>
+  <a href="#">Hoodies</a>
+  <a href="#">Sweatshirts</a>
+  <a href="#">Casual Wear</a>
+  <a href="#">Uniforms</a>
+  <a href="#">More…</a>
+</div>
+
+<!-- HERO BANNER -->
+<section class="hero-banner">
+  <div class="hero-content">
+    <h1>New Season Arrivals</h1>
+    <p>Discover the latest styles and best deals of the year!</p>
+    <button class="hero-btn">Shop Now</button>
+  </div>
+</section>
+
+<!-- FEATURED CATEGORIES -->
+<section class="section">
+  <h2>Shop By Category</h2>
+  <div class="category-grid">
+    <div class="cat-card">
+      <img src="https://i.imgur.com/UdZQ9Jw.png">
+      <h3>Men</h3>
     </div>
-  </section>
-
-  <!-- Categories Section -->
-  <section class="categories">
-    <h2>Shop by Category</h2>
-    <div class="category-grid">
-      <div class="category-card">
-        <h3>Men</h3>
-        <p>Shirts, T-shirts, Jeans, and more.</p>
-      </div>
-      <div class="category-card">
-        <h3>Women</h3>
-        <p>Dresses, Tops, Kurtis, and more.</p>
-      </div>
-      <div class="category-card">
-        <h3>Kids</h3>
-        <p>Comfortable outfits for kids.</p>
-      </div>
+    <div class="cat-card">
+      <img src="https://i.imgur.com/PH5xkEU.png">
+      <h3>Women</h3>
     </div>
-  </section>
-
-  <!-- Featured Products Section -->
-  <section class="products">
-    <h2>Featured Products</h2>
-    <div class="product-grid" id="featured_products">
-      <!-- For now, static products (later will come from Sheets) -->
-      <div class="product-card">
-        <div class="product-img"></div>
-        <h3>Men's Casual Shirt</h3>
-        <p class="price">₹699</p>
-      </div>
-
-      <div class="product-card">
-        <div class="product-img"></div>
-        <h3>Women's Summer Dress</h3>
-        <p class="price">₹899</p>
-      </div>
-
-      <div class="product-card">
-        <div class="product-img"></div>
-        <h3>Kids T-Shirt</h3>
-        <p class="price">₹399</p>
-      </div>
+    <div class="cat-card">
+      <img src="https://i.imgur.com/WAiyW4h.png">
+      <h3>Kids</h3>
     </div>
-  </section>
+    <div class="cat-card">
+      <img src="https://i.imgur.com/YRowlNu.png">
+      <h3>Winter Wear</h3>
+    </div>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <p id="footer_text">© 2025 MyCloth. All rights reserved.</p>
-  </footer>
+<!-- TRENDING PRODUCTS -->
+<section class="section">
+  <h2>Trending Products</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://i.imgur.com/eR2C0wz.jpeg">
+      <h3>Cotton T-Shirt</h3>
+      <p class="price">₹499 <span class="offer">40% OFF</span></p>
+    </div>
 
-  <!-- JS Script -->
-  <script src="assets/js/main.js"></script>
+    <div class="product-card">
+      <img src="https://i.imgur.com/RtfkFHy.jpeg">
+      <h3>Classic Shirt</h3>
+      <p class="price">₹899 <span class="offer">25% OFF</span></p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.imgur.com/84sP3dx.jpeg">
+      <h3>Hoodie</h3>
+      <p class="price">₹1199 <span class="offer">30% OFF</span></p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.imgur.com/RCGwjPn.jpeg">
+      <h3>Track Pants</h3>
+      <p class="price">₹699 <span class="offer">20% OFF</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER BANNER -->
+<section class="offer-banner">
+  <img src="https://i.imgur.com/2g0RRj5.jpeg">
+</section>
+
+<!-- CUSTOMIZATION SHOWCASE -->
+<section class="section">
+  <h2>Customize Your Style</h2>
+  <div class="custom-grid">
+    <div class="custom-card">
+      <img src="https://i.imgur.com/TVnAT2X.jpeg">
+      <h3>Custom T-Shirt Printing</h3>
+    </div>
+    <div class="custom-card">
+      <img src="https://i.imgur.com/M6NfIsP.jpeg">
+      <h3>Name Print Hoodies</h3>
+    </div>
+    <div class="custom-card">
+      <img src="https://i.imgur.com/lT8Ehxn.jpeg">
+      <h3>Bulk Orders</h3>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 MyCloth. All Rights Reserved.</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
