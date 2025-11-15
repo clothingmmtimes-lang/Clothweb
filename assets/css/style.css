@@ -50,6 +50,7 @@ body {
   background: linear-gradient(to bottom, #f6f9ff, #e6ebff);
 }
 
+
 /* CATEGORY BAR (3D BUTTONS) */
 .category-bar {
   display: flex;
@@ -75,6 +76,19 @@ body {
   background: #eef2ff;
   color: #1d4ed8;
 }
+
+.category-bar {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.category-bar a {
+  border-bottom: none !important;
+  outline: none !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04) !important;
+}
+
 
 /* HERO */
 .hero-banner {
